@@ -37,7 +37,7 @@ class ProductDescription extends StatelessWidget {
             decoration: BoxDecoration(
               color:
                   product.isFavourite ? Color(0xFFFFE6E6) : Color(0xFFF5F6F9),
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(20),
                 bottomLeft: Radius.circular(20),
               ),
@@ -63,12 +63,12 @@ class ProductDescription extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(
             horizontal: getProportionateScreenWidth(20),
-            vertical: 10,
+            vertical: 5,
           ),
           child: GestureDetector(
             onTap: () {},
             child: Row(
-              children: [
+              children: const [
                 Text(
                   "See More Detail",
                   style: TextStyle(

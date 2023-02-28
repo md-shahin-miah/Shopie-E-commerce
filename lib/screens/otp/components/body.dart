@@ -21,9 +21,9 @@ class Body extends StatelessWidget {
                 "OTP Verification",
                 style: headingStyle,
               ),
-              const Text("We sent your code to  3433***"),
+              const Text("We sent your code to  56553***"),
               buildTimer(),
-              OtpForm(),
+              const OtpForm(),
               SizedBox(height: SizeConfig.screenHeight * 0.1),
               GestureDetector(
                 onTap: () {
@@ -45,13 +45,13 @@ class Body extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("This code will expired in "),
+        const Text("This code will expired in "),
         TweenAnimationBuilder(
-          tween: Tween(begin: 30.0, end: 0.0),
+          tween: Tween(begin: 50.0, end: 0.0),
           duration: Duration(seconds: 30),
           builder: (_, dynamic value, child) => Text(
             "00:${value.toInt()}",
-            style: TextStyle(color: kPrimaryColor),
+            style: const TextStyle(color: kPrimaryColor),
           ),
         ),
       ],

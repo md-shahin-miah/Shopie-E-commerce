@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app_ui/size_config.dart';
 
 
-const kPrimaryColor = Color(0xFFD7098F);
+const kPrimaryColor = Color(0xFF02A8A8);
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
   colors: [Color(0xFFD962B0), Color(0xFFD7098F)],
 );
-const kSecondaryColor = Color(0xFF979797);
+const kSecondaryColor = Color(0xFF808685);
 const kTextColor = Color(0xFF757575);
 
 const kAnimationDuration = Duration(milliseconds: 200);

@@ -9,6 +9,7 @@ import '../../../constants.dart';
 import '../../../helper/keyboard.dart';
 import '../../../size_config.dart';
 import '../../forgot_password/forgot_password_screen.dart';
+import '../../home/home_screen.dart';
 import '../../login_success/login_success_screen.dart';
 
 class SignForm extends StatefulWidget {
@@ -24,17 +25,19 @@ class _SignFormState extends State<SignForm> {
   final List<String?> errors = [];
 
   void addError({String? error}) {
-    if (!errors.contains(error))
+    if (!errors.contains(error)) {
       setState(() {
         errors.add(error);
       });
+    }
   }
 
   void removeError({String? error}) {
-    if (errors.contains(error))
+    if (errors.contains(error)) {
       setState(() {
         errors.remove(error);
       });
+    }
   }
 
   @override
@@ -58,7 +61,7 @@ class _SignFormState extends State<SignForm> {
                   });
                 },
               ),
-              Text("Remember me"),
+              const Text("Remember me"),
               Spacer(),
               GestureDetector(
                 onTap: () => Navigator.pushNamed(
@@ -79,7 +82,7 @@ class _SignFormState extends State<SignForm> {
                 _formKey.currentState!.save();
                 // if all are valid then go to success screen
                 KeyboardUtil.hideKeyboard(context);
-                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                Navigator.pushNamed(context, HomeScreen.routeName);
               }
             },
           ),
@@ -93,6 +96,7 @@ class _SignFormState extends State<SignForm> {
       obscureText: true,
       onSaved: (newValue) => password = newValue,
       onChanged: (value) {
+        value="shahin@1234";
         if (value.isNotEmpty) {
           removeError(error: kPassNullError);
         } else if (value.length >= 8) {
@@ -101,6 +105,8 @@ class _SignFormState extends State<SignForm> {
         return null;
       },
       validator: (value) {
+        value="shahin@1234";
+
         if (value!.isEmpty) {
           addError(error: kPassNullError);
           return "";
@@ -126,6 +132,7 @@ class _SignFormState extends State<SignForm> {
       keyboardType: TextInputType.emailAddress,
       onSaved: (newValue) => email = newValue,
       onChanged: (value) {
+        value="shahin@gmail.com";
         if (value.isNotEmpty) {
           removeError(error: kEmailNullError);
         } else if (emailValidatorRegExp.hasMatch(value)) {
@@ -134,6 +141,7 @@ class _SignFormState extends State<SignForm> {
         return null;
       },
       validator: (value) {
+        value="shahin@gmail.com";
         if (value!.isEmpty) {
           addError(error: kEmailNullError);
           return "";

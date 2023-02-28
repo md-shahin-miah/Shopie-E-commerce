@@ -67,7 +67,7 @@ class _SplashBodyState extends State<SplashBody> {
                         (index) => buildDot(index: index),
                       ),
                     ),
-                    Spacer(flex: 3),
+                    const Spacer(flex: 3),
                     DefaultButton(
                       text: "Continue",
                       press: () {

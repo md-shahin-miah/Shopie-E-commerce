@@ -24,6 +24,72 @@ class Product {
 // Our demo Products
 
 List<Product> demoProducts = [
+
+  Product(
+    id: 7,
+    images: [
+      "assets/images/watch.png",
+      "assets/images/watch.png",
+      "assets/images/watch.png",
+    ],
+    colors: [
+      Color(0xFFFF3ED2),
+      Color(0xFF9B021F),
+      Color(0xFFDECB9C),
+      Colors.teal,
+    ],
+    title: "Watch for men™",
+    price: 23.43,
+    description: description2,
+    rating: 4.4,
+    isFavourite: true,
+    isPopular: true,
+  ),
+
+  Product(
+    id: 7,
+    images: [
+      "assets/images/shoes.png",
+      "assets/images/shoes.png",
+      "assets/images/shoes.png",
+    ],
+    colors: [
+      Color(0xFFFF3ED2),
+      Color(0xFF9B021F),
+      Color(0xFFDECB9C),
+      Colors.teal,
+    ],
+    title: "Shoes for men™",
+    price: 23.43,
+    description: description2,
+    rating: 4.4,
+    isFavourite: true,
+    isPopular: true,
+  ),
+
+
+  Product(
+    id: 6,
+    images: [
+      "assets/images/sun_glass.png",
+      "assets/images/sun_glass.png",
+    ],
+    colors: [
+      Color(0xFF000000),
+      Color(0xFF9B021F),
+      Color(0xFFDECB9C),
+      Colors.teal,
+    ],
+    title: "Sun glass for men™",
+    price: 14.49,
+    description: description2,
+    rating: 4.8,
+    isFavourite: true,
+    isPopular: true,
+  ),
+  
+  
+  
   Product(
     id: 1,
     images: [
@@ -36,7 +102,7 @@ List<Product> demoProducts = [
       Color(0xFFF6625E),
       Color(0xFF836DB8),
       Color(0xFFDECB9C),
-      Colors.white,
+      Colors.teal,
     ],
     title: "Wireless Controller for PS4™",
     price: 64.99,
@@ -48,13 +114,14 @@ List<Product> demoProducts = [
   Product(
     id: 2,
     images: [
+      "assets/images/pant.png",
       "assets/images/Image Popular Product 2.png",
     ],
     colors: [
       Color(0xFFF6625E),
       Color(0xFF836DB8),
       Color(0xFFDECB9C),
-      Colors.white,
+      Colors.teal,
     ],
     title: "Nike Sport White - Man Pant",
     price: 50.5,
@@ -71,7 +138,7 @@ List<Product> demoProducts = [
       Color(0xFFF6625E),
       Color(0xFF836DB8),
       Color(0xFFDECB9C),
-      Colors.white,
+      Colors.teal,
     ],
     title: "Gloves XC Omega - Polygon",
     price: 36.55,
@@ -89,7 +156,7 @@ List<Product> demoProducts = [
       Color(0xFFF6625E),
       Color(0xFF836DB8),
       Color(0xFFDECB9C),
-      Colors.white,
+      Colors.teal,
     ],
     title: "Logitech Head",
     price: 20.20,
@@ -101,3 +168,5 @@ List<Product> demoProducts = [
 
 const String description =
     "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
+const String description2 =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis volutpat imperdiet. Phasellus rhoncus...";

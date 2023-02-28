@@ -20,13 +20,14 @@ class SearchField extends StatelessWidget {
         onChanged: (value) => print(value),
         decoration: InputDecoration(
             contentPadding: EdgeInsets.symmetric(
-                horizontal: getProportionateScreenWidth(20),
-                vertical: getProportionateScreenWidth(9)),
+                horizontal: getProportionateScreenWidth(20),),
             border: InputBorder.none,
             focusedBorder: InputBorder.none,
             enabledBorder: InputBorder.none,
             hintText: "Search product",
+            alignLabelWithHint: true,
             prefixIcon: Icon(Icons.search)),
+        textAlignVertical: TextAlignVertical.center,
       ),
     );
   }
