@@ -19,7 +19,7 @@ class SplashContent extends StatelessWidget {
         Text(
           "SHOPIE",
           style: TextStyle(
-            fontSize: getProportionateScreenWidth(36),
+            fontSize: getProportionateScreenWidth(46),
             color: kPrimaryColor,
             fontWeight: FontWeight.bold,
           ),
@@ -31,8 +31,9 @@ class SplashContent extends StatelessWidget {
         Spacer(flex: 2),
         Image.asset(
           image!,
-          height: getProportionateScreenHeight(265),
+          height: getProportionateScreenHeight(290),
           width: getProportionateScreenWidth(235),
+          fit: BoxFit.cover,
         ),
       ],
     );

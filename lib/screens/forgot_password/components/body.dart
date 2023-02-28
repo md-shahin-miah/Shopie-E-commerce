@@ -33,6 +33,7 @@ class Body extends StatelessWidget {
                 "Please enter your email and we will send \nyou a link to return to your account",
                 textAlign: TextAlign.center,
               ),
+              SizedBox(height: 20),
               ForgotPassForm(),
             ],
           ),
@@ -97,7 +98,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           ),
           SizedBox(height: getProportionateScreenHeight(30)),
           FormError(errors: errors),
-          SizedBox(height: SizeConfig.screenHeight * 0.1),
+          SizedBox(height: SizeConfig.screenHeight * 0.06),
           DefaultButton(
             text: "Continue",
             press: () {

@@ -18,16 +18,16 @@ class _SplashBodyState extends State<SplashBody> {
   List<Map<String, String>> splashData = [
     {
       "text": "Welcome to SHOPIE, Let’s shop!",
-      "image": "assets/images/splash_1.png"
+      "image": "assets/images/banner.png"
     },
     {
       "text":
           "We help people conect with store \naround United State of America",
-      "image": "assets/images/splash_2.png"
+      "image": "assets/images/banner1.png"
     },
     {
       "text": "We show the easy way to shop. \nJust stay at home with us",
-      "image": "assets/images/splash_3.png"
+      "image": "assets/images/banner2.png"
     },
   ];
   @override
@@ -38,7 +38,7 @@ class _SplashBodyState extends State<SplashBody> {
         child: Column(
           children: <Widget>[
             Expanded(
-              flex: 3,
+              flex: 4,
               child: PageView.builder(
                 onPageChanged: (value) {
                   setState(() {
